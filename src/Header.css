@@ -1,0 +1,73 @@
+/* Header Styles */
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 15px 40px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #bd2e95; /* Example background color */
+    height: 60px; /* Keeps the header's height fixed */
+}
+
+.logo img {
+    height: auto; /* Maintain aspect ratio */
+    max-height: 100px; /* Prevents header expansion */
+    width: auto;
+    margin-left: -30px;
+}
+
+/* Navigation Styling */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem; /* Slightly larger font for better readability */
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+nav a:hover {
+    color: #fff3f3; /* Light color for hover effect */
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    /* Adjust the header padding and height for mobile */
+    .header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 20px;
+        height: auto; /* Allow header height to adjust on smaller screens */
+    }
+
+    /* Logo adjustment for smaller screens */
+    .logo img {
+        max-height: 80px; /* Slightly smaller logo for mobile */
+        margin-left: 0;
+    }
+
+    /* Stack the navigation links vertically on mobile */
+    nav ul {
+        flex-direction: column;
+        gap: 15px; /* Space between items */
+        align-items: center;
+    }
+
+    /* Adjust link font size and remove hover effects on mobile */
+    nav a {
+        font-size: 1rem; /* Adjust font size for readability */
+    }
+
+    nav a:hover {
+        color: #fff3f3; /* Keep hover effect on mobile */
+    }
+}

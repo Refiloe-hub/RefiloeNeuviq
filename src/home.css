@@ -1,0 +1,337 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: auto;
+    min-height: 100vh;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Home Container */
+.home-container {
+    width: 100vw;
+    height: auto;
+    min-height: 100vh;
+    text-align: center;
+    color: white;
+    overflow-x: hidden;
+    background: url("/background.png") no-repeat center center/cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px;
+    overflow-y: visible;
+    padding-top: 80px;
+}
+
+/* Hero Section */
+.hero {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    text-shadow: 2px 2px 8px rgba(202, 94, 136, 0.322);
+    min-height: 70vh;
+    color: white;
+}
+
+/* Container to wrap text and image side by side */
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    gap: 30px;
+}
+
+
+/* Text section */
+.text-section {
+    flex: 1;
+    padding-right: 30px;
+}
+
+/* Image section */
+.image-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.image-section img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Hero Text */
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.4rem;
+    max-width: 800px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+/* CTA Button */
+.cta-button {
+    background: #e01067;
+    color: white;
+    padding: 14px 28px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgba(224, 16, 103, 0.6);
+    position: relative;
+    overflow: hidden;
+    border-radius: 40px;
+}
+
+/* Glowing Effect on Hover */
+.cta-button:hover {
+    background: #ff1473;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(224, 16, 103, 0.8), 
+                0 0 40px rgba(224, 16, 103, 0.6), 
+                0 0 60px rgba(224, 16, 103, 0.4);
+}
+
+/* Animated Glow Effect */
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 10px rgba(224, 16, 103, 0.6);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(224, 16, 103, 0.8), 0 0 40px rgba(224, 16, 103, 0.6);
+    }
+    100% {
+        box-shadow: 0 0 10px rgba(224, 16, 103, 0.6);
+    }
+}
+
+/* Apply Animation */
+.cta-button {
+    animation: glow 1.5s infinite alternate;
+}
+
+/* Services Section */
+.services {
+    padding: 70px 20px;
+    width: 100%;
+}
+
+.services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    margin-bottom: 60px;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Service Card Images - Adjusted Size */
+.service-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    width: 280px;
+    text-align: center;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 320px;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.service-card img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.service-card p {
+    font-size: 1rem;
+    padding: 0 10px;
+}
+
+.service-card h3 {
+    font-size: 1.6rem;
+    margin-bottom: 12px;
+}
+
+.service-card p {
+    font-size: 1rem;
+}
+
+/* Case Studies */
+.case-studies {
+    padding: 60px 20px;
+    width: 100%;
+    background: rgba(81, 90, 173, 0.1);
+    margin-bottom: 60px;
+}
+
+.case-studies h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.case-studies p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Testimonials */
+.testimonials {
+    padding: 60px 20px;
+    width: 60%;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border-radius: 40px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.testimonials h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.testimonial-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%;
+    margin: 20px auto;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+}
+
+/* About Preview */
+.about-preview {
+    padding: 50px 20px;
+    width: 100%;
+    background: rgba(107, 47, 77, 0.1);
+    
+}
+
+.about-preview h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    
+}
+
+.about-preview p {
+    font-size: 1.4rem;
+    max-width: 900px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+/* About Preview - Picture beside Text */
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+.text-section {
+    flex: 1;
+    padding-right: 30px;
+}
+
+.image-section {
+    flex: 1;
+}
+
+.image-section img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease; /* Smooth transition for transform */
+    transform: scale(1.1); /* Always zoomed in */
+    box-shadow: 0 0 20px rgba(224, 16, 103, 0.6); /* Always glowing */
+    
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-section {
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .image-section img {
+        max-width: 100%;
+    }
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 50px 20px;
+    width: 100%;
+    background: rgba(107, 47, 77, 0.1);
+}
+
+.contact-section .cta-button {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background: #e01067;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s ease-in-out;
+    border-radius: 40px;
+}
