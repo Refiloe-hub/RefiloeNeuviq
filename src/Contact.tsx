@@ -54,7 +54,7 @@ const Contact: React.FC = () => {
         <div className="contact-details">
           <h2>Contact Information</h2>
           <p><strong>Email:</strong> info@neuviqsolutions.com</p>
-          <p><strong>Phone:</strong> +27 659834925s</p>
+          <p><strong>Phone:</strong> +27 659834925</p>
           <p><strong>Location:</strong> 443 Leyds Street, Innovation City</p>
           <h3>Follow Us</h3>
           <div className="social-icons">
